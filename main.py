@@ -20,7 +20,6 @@ try:
 except:
   raise Exception("Error: your google_key secret is not valid")
 
-
 # SQL dialect reference: https://cloud.google.com/bigquery/docs/reference/standard-sql/string_functions 
 for csv_name, tablename in (('data', 'bigquery-public-data.stackoverflow.posts_questions'), 
                             ('fh_data', 'fh-bigquery.stackoverflow_archive_questions.merged')):
